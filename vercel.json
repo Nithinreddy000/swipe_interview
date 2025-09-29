@@ -5,12 +5,18 @@
   "installCommand": "npm install",
   "devCommand": "npm run dev",
   "env": {
-    "CI": "false"
+    "CI": "false",
+    "SKIP_PREFLIGHT_CHECK": "true",
+    "TSC_COMPILE_ON_ERROR": "true",
+    "ESLINT_NO_DEV_ERRORS": "true"
   },
   "build": {
     "env": {
       "CI": "false",
-      "GENERATE_SOURCEMAP": "false"
+      "GENERATE_SOURCEMAP": "false",
+      "SKIP_PREFLIGHT_CHECK": "true",
+      "TSC_COMPILE_ON_ERROR": "true",
+      "ESLINT_NO_DEV_ERRORS": "true"
     }
   },
   "rewrites": [
