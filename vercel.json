@@ -13,7 +13,6 @@
       "GENERATE_SOURCEMAP": "false"
     }
   },
-  "functions": {},
   "rewrites": [
     {
       "source": "/(.*)",
