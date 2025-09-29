@@ -64,18 +64,26 @@ A modern, enterprise-grade AI-powered interview platform that streamlines techni
    ```
 
 3. **Environment Configuration**
-   Create a `.env` file in the root directory:
-   ```env
-   # Mistral AI Configuration
-   VITE_MISTRAL_API_KEY=your_mistral_api_key_here
+   Copy the example environment file and configure your API keys:
+   ```bash
+   cp .env.example .env
+   ```
    
-   # OpenRouter AI Configuration  
+   Edit `.env` with your API keys:
+   ```env
+   # OpenRouter AI Configuration (REQUIRED)
    VITE_OPENROUTER_API_KEY=your_openrouter_api_key_here
    
-   # Google Cloud Document AI (Optional)
+   # Optional: OpenRouter Model (defaults to mistralai/Mistral-7B-Instruct)
+   VITE_OPENROUTER_MODEL=mistralai/Mistral-7B-Instruct
+   
+   # Google Cloud Document AI (Optional - for enhanced resume processing)
    VITE_GOOGLE_CLOUD_PROJECT_ID=your_project_id
    VITE_DOCUMENT_AI_PROCESSOR_ID=your_processor_id
+   VITE_DOCUMENT_AI_LOCATION=us-central1
    ```
+   
+   **⚠️ SECURITY NOTE**: Never commit your `.env` file to version control. API keys are stored in GitHub Secrets for production deployment.
 
 4. **Start Development Server**
    ```bash
@@ -290,19 +298,42 @@ const useOptimizedSearch = (searchTerm: string, data: any[], delay: number = 300
 ## 🔒 Security & Best Practices
 
 ### API Key Management
-- Environment variable configuration
-- No hardcoded secrets in source code
-- Secure credential handling
+- **Environment Variables**: All API keys are stored in environment variables, never hardcoded
+- **GitHub Secrets**: Production API keys stored securely in GitHub repository secrets
+- **Local Development**: Use `.env` file (never committed to version control)
+- **Fallback Handling**: Graceful degradation when API keys are missing
+
+#### Setting up GitHub Secrets:
+1. **Navigate to Repository Settings**
+   - Go to your GitHub repository
+   - Click **Settings** → **Secrets and variables** → **Actions**
+
+2. **Add Required Secrets:**
+   ```
+   VITE_OPENROUTER_API_KEY: your-openrouter-api-key
+   VITE_OPENROUTER_MODEL: mistralai/Mistral-7B-Instruct
+   VITE_GOOGLE_CLOUD_PROJECT_ID: your-gcp-project-id
+   VITE_DOCUMENT_AI_PROCESSOR_ID: your-processor-id  
+   VITE_DOCUMENT_AI_LOCATION: us-central1
+   ```
+
+3. **GitHub Actions Integration**
+   - Secrets are automatically injected during CI/CD
+   - Available in build process via `${{ secrets.SECRET_NAME }}`
+   - Never exposed in logs or build artifacts
 
 ### Data Security
 - Input validation and sanitization
 - XSS protection through React's built-in security
 - Secure file upload handling
+- API key encryption in transit
+- No sensitive data logged to console in production
 
 ### Error Handling
 - Comprehensive error boundaries
-- Graceful API failure handling  
+- Graceful API failure handling with fallbacks
 - User-friendly error messages
+- Secure error reporting (no sensitive data exposure)
 
 ## 🛠️ Development Workflow
 

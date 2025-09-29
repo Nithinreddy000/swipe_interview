@@ -1,6 +1,6 @@
 import { Question, Answer } from '@/types/index'
 
-const OPENROUTER_API_KEY = import.meta.env.VITE_OPENROUTER_API_KEY || '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'
+const OPENROUTER_API_KEY = import.meta.env.VITE_OPENROUTER_API_KEY;
 const OPENROUTER_BASE_URL = 'https://openrouter.ai/api/v1/chat/completions'
 const OPENROUTER_MODEL = import.meta.env.VITE_OPENROUTER_MODEL || 'mistralai/Mistral-7B-Instruct'
 
