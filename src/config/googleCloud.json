@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "fraprojectsih2025",
+  "private_key_id": "53e9df16bdcb84287c8c23a016b410ad84adec19",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDAQkcxAjN1ow6s\nnwSXZRmIJ1PbTu61hfp4+V2ffFd/PWCrjY8qVJwye1sI7ijsy2XHCktGvWBBBvSZ\nmkkHcSVH0EHCcfkr/EU3l5ZjC8cKAtgkWV3Yob3ucBLJjkOEJczelIqFcaPYewsi\nrxY0q1ltk3jMap1/O4j+WWztkA7ZBqAp6DD10LpOgGcfLppaAzS5ESs7W8OZAIMd\n1fIySUUodPQyNeq7mwdzdgcVg/ePNb0WrM58+wM8Se6fCVLFwtrBTjy3GKyGhrCM\n/xpqrKc5+MsMRVd9IFtWO9sEpgT6QCYsQYwlE33M55v/zt7eguW2IpZHvJrDmxYQ\nt1/sdLjtAgMBAAECggEAKHyMk2R8Q7SPvYhLJjqTEtn9TbykhjNtmJYiwhgkMNZT\nCi1oTai9r9/MPugwVBVNHIotafstTuRRFBuqb1fDWwkfH/xyVXHtfZR9heQQCSqq\nK5VqLtl4rsKJIkrEKwruxpyPQyS4NTlMEgS+7156GZopoRp+ijGWWsGoL6rbhZYD\nKbfGuh1Xj5r1T0wi84Zsd9QTIpXJk2+6CmKX9Ah61BX6GoK7bE3ETfum28IZHKXs\nhiROyGTEjkzs/cMw7Luyh2qoni6WwFcv2O8ckgUh1svx5ccPFy8OOCs41wu9tmN5\n/2a3xn9jq05iDnp3uBhgLF+er1pxNIL9ddFXhzsfQQKBgQDfZXTLruZvsp5dVGV3\nQ951dPSH/tz7uVcHPT0gtz25p14XdXQnQYNo5J04IS6UgcOIQLFU08SAc96Igiou\n3xT0peEZU3K3S8J+QUa88vlMvCMiAyBMqQIMwUbS4nyxk3IkpkLU0tm+8OYft7eR\n7hGTeq/34hDu0JzdxfDwjhz8sQKBgQDcUXbbKQymoiSdEcjRLb/8raqUA3nTOMSF\nIaNK2y2yaQ2MBRo+z6NzrS0LSbeW+hk0CXqAtx1gnRkIwnCluseouaFo5ZB13u33\nV/apwjzOl+tGp6sjYiq1ghpQ3E/ueNTJsSonzPa5Od1c9EsyszDbbZctsQ2L4M+f\n1pqiLuZe/QKBgHcl25dPH2Rvtfs9KijkL+AhktJ94kr33SzlQpcSZH+CfrKwWFUf\nogDt/dSUDg3y7+DZ8Dq3/9Qq+IOCORFqtfiOCHLDiSmt5HwGQL5CMSj2Jx7a3/1D\nHu7Cnw2W8r6bT4OwkXCFTNGEFpjQGb5hZUptYzEoh7N33FKEYi9K/LbhAoGBAJrf\nNTLIP1lff2deWhEZHO1NUyxq6Rdev15qj/QN8KiKinhUGefvZBHruU9HCaQ6uL7I\nrvGORztkE3YB4NfPXYywuNMZFJyXEiaeEgmxPbdoOX5YXMgpuKYRB9ixlgqnq8UA\nIgcKYKFCGOa/36CLMBv/hJcc783VQX41iEvbthstAoGAIba9KEnbg7i3xCLPYYI5\n0zEpKSZ5AB/qXH1Kk9a0qYe5nJRONuScjst2phg44xvRCvwADaaPOaczeciVUxRv\n615yc+M8x1r3S75vwEbGtsb2ZR++0foBEzO1lZ5Yfdh3UjPSpAGmHgOHp4CSPCUF\na6ivdfmXi+QiGI4KpRWY/gQ=\n-----END PRIVATE KEY-----\n",
+  "client_email": "van-adhikar-gee-service@fraprojectsih2025.iam.gserviceaccount.com",
+  "client_id": "109048244492639384641",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/van-adhikar-gee-service%40fraprojectsih2025.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
